@@ -1,0 +1,33 @@
+@import 'partials/variables';
+
+.setting-card{
+    padding: .5em;
+}
+
+.settings-menu{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+a{
+    text-decoration: none;
+}
+
+.shared{
+    font-size: 1.4em;
+    background-color: whitesmoke;
+    padding: 1em;
+    border: 2px solid $color-blue;
+}
+
+@media(min-width: 1200px){
+    .settings-menu{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.preview{
+    width: 50%;
+    height: 250px;
+    object-fit: cover;
+}

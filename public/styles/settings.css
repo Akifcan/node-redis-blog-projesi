@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap");
+.setting-card {
+  padding: .5em;
+}
+
+.settings-menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+a {
+  text-decoration: none;
+}
+
+.shared {
+  font-size: 1.4em;
+  background-color: whitesmoke;
+  padding: 1em;
+  border: 2px solid #0c2461;
+}
+
+@media (min-width: 1200px) {
+  .settings-menu {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.preview {
+  width: 50%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=settings.css.map */

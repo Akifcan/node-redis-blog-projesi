@@ -1,0 +1,19 @@
+{{#if success}}
+    <div class="alert background-green">
+        {{success}}
+    </div>
+{{/if}}
+
+{{#if error}}
+    <div class="alert background-red">
+        {{error}}
+    </div>
+{{/if}}
+
+{{#if validations}}
+    <div class="alert background-red">
+       {{#each validations}}
+            {{this}} <br />
+        {{/each}}
+    </div>
+{{/if}}

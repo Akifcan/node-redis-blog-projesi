@@ -1,0 +1,21 @@
+{{#section 'styles'}}
+    <link rel="stylesheet" href="styles/posts.css">
+{{/section}}
+
+<div class="posts">
+    {{#each posts }}
+    <div class="post">
+        <img src="{{imagePath}}" alt="{{title}}">
+        <div class="post-info">
+            <h2 class="title">{{title}}</h2>
+            {{#ifNot isActive}}
+                <button class="background-orange">Taslak</button>
+            {{/ifNot}}
+            <p class="subtitle">{{subtitle}}</p>
+            <a href="{{slug}}">
+                <button class="background-blue">Oku</button>
+            </a>
+        </div>
+    </div>
+    {{/each}}
+</div>

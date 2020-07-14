@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,CAAA;EACJ,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,YAAY;EAC7B,WAAW,EAAE,MAAM;EACnB,cAAc,EAAE,MAAM;CACzB",
+    "sources": [
+        "your-message-taken.scss"
+    ],
+    "names": [],
+    "file": "your-message-taken.css"
+}

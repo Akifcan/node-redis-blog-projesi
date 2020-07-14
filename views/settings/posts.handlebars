@@ -1,0 +1,29 @@
+{{#section 'styles'}}
+    <link rel="stylesheet" href="/styles/settings.css">
+{{/section}}
+
+{{> _settings}}
+
+<h1 class="mt-5">{{pageTitle}}</h1>
+
+{{> _alert}}
+
+
+<div class="shareds mt-5">
+    {{#each posts}}
+        <div class="shared mt-5">
+            {{title}} 
+             <a href="/settings/edit-post/{{_id}}"><i class="fa fa-pen color-orange">pen icon</i></a>
+             <a href="/settings/delete-post/{{_id}}"><i class="fa fa-trash color-red">trash icon</i></a>
+             <a href="/settings/set-post-status/{{_id}}">
+                 <button class="background-blue">
+                     {{#if isActive}}
+                        Taslağa Al
+                        {{else}}
+                        Aktif Et
+                     {{/if}}
+                 </button>
+             </a>
+        </div>
+    {{/each}}
+</div>

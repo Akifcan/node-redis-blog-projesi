@@ -1,0 +1,30 @@
+.logo{
+    font-family: $font-pacifico;
+}
+
+.menu{
+    cursor: pointer;
+}
+
+header{
+    color: white;
+    background-color:   $color-blue;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+    a{
+        text-decoration: none;
+        color: white;
+      
+    }
+    .menu{
+        display: inline;
+    }
+    div{
+        display: flex;
+    }
+}

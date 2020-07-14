@@ -1,0 +1,17 @@
+{{#section 'styles'}}
+    <link rel="stylesheet" href="/styles/settings.css">
+{{/section}}
+
+{{> _settings}}
+
+<h1 class="mt-5">{{pageTitle}}</h1>
+
+{{> _alert}}
+
+<div class="shareds mt-5">
+    {{#each comments}}
+        <div class="shared mt-5">
+            {{ comment }} - <b>{{name}}</b> <a href="/settings/delete-comment/{{id}}"><i class="fa fa-trash color-red"></i></a>
+        </div>
+    {{/each}}
+</div>

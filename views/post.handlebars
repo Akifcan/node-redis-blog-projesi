@@ -1,0 +1,60 @@
+{{#section 'styles'}}
+    <link rel="stylesheet" href="styles/post.css">
+{{/section}}
+
+{{#section 'scripts'}}
+    <script src="scripts/post.js"></script>
+    {{#if post.allowComments}}
+        <script src="scripts/comment.js"></script>
+    {{/if}}
+{{/section}}
+
+<div class="post">
+    <h1 class="post-title">{{post.title}}</h1>
+    <p class="subtitle">{{post.subtitle}}</p>
+    <img src="{{post.imagePath}}" alt="{{post.title}}">
+    <button class="background-blue increase" title="Font büyüklüğünü arttır"><i class="fa fa-plus"></i></button>
+    <button class="background-orange decrease" title="Font büyüklüğünü küçült"><i class="fa fa-minus"></i></button>
+    <div class="body">{{{ post.content }}}</div>
+</div>
+
+<hr class="divider">
+
+{{#if post.allowComments}}
+<div>
+    <h1 class="comment-title">Yorumlar</h1>
+    <button class="background-blue toggleComment">Yorum Ekle</button>
+    <form class="do-comment">
+        <div class="form-group">
+            <label for="name">Adınız</label>
+            <input type="text" id="name" class="width-100">
+        </div>
+         <div class="form-group">
+            <label for="email">E-Posta Adresiniz</label>
+            <input type="email" id="email" class="width-100">
+        </div>
+        <div class="form-group">
+            <label for="comment">Yorumunuz</label>
+            <textarea id="comment" cols="30" class="width-100" rows="10"></textarea>
+        </div>
+        <button class="background-blue width-100">Yorum Yap</button>
+    </form>
+    <div class="comments">
+        {{#each comments}}
+        <div class="comment">
+            <div class="user-info">
+                <div class="user-avatar">
+                    {{ avatarLetter name }}
+                </div>
+                <div class="username">
+                    {{ name }}
+                </div>
+            </div>
+            <div class="text">
+                <p>{{ comment }}</p>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+{{/if}}

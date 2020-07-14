@@ -1,0 +1,32 @@
+{{#section 'styles'}}
+    <link rel="stylesheet" href="/styles/about.css">
+{{/section}}
+
+{{#if user}}
+    {{> _alert}}
+{{/if}}
+
+<div class="about-me">
+    <h1>Hakkımda</h1>
+    <p class="about-me-text">{{{about}}}</p>
+    {{#if user}}
+        <form class="edit-about-me" method="POST" action="/about/update-about">
+            <textarea name="about" id="edit"></textarea>
+            <button class="background-blue">Düzenlemeyi Bitir</button>
+        </form>
+    {{/if}}
+</div>
+
+<div class="actions">
+    <p>Eğer bana bir sorun varsa <a href="#">buradan</a> ulaşabilirsin. </p>
+    {{#if user}}
+        <button class="background-orange edit">Düzenle <i class="fa fa-pen"></i> </button>
+    {{/if}}
+</div>
+
+{{#section 'scripts'}}
+    {{#if user}}
+        <script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+        <script src="/scripts/about.js"></script>
+    {{/if}}
+{{/section}}

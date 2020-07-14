@@ -1,0 +1,41 @@
+{{#section 'styles'}}
+<link rel="stylesheet" href="/styles/create.css">
+{{/section}}
+
+{{#section 'scripts'}}
+<script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+<script src="/scripts/create.js"></script>
+{{/section }}
+
+{{> _alert}}
+
+<fieldset class="create">
+    <legend>Yazı Ekle</legend>
+    <form method="POST" action="/create" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="title">Başlık</label>
+            <input type="text" class="width-100 mt-5" id="title"  maxlength="50"  name="title" minlength="3">
+        </div>
+        <div class="form-group">
+            <label for="subtitle">Alt Başlık</label>
+            <input type="text" class="width-100 mt-5" id="subtitle"   name="subtitle" maxlength="20">
+        </div>
+        <div class="form-group">
+            <label for="image">Alt Başlık</label>
+            <input type="file" class="width-100 mt-5" id="image" name="image" required accept="images/*">
+        </div>
+        <div class="form-group">
+            <label for="content">İçerik</label>
+            <textarea id="content" minlength="20" required name="content"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="allow-comments">Yorumlara İzin Ver</label>
+            <input type="checkbox" class="ml-5" checked="checked" name="allowComments" id="allowComments">
+        </div>
+        <div class="alert background-green mb-5">
+            <p>Yorumlara İzin Verdiniz</p>
+        </div>
+        <button class="background-blue" type="submit">Oluştur</button>
+        <button class="background-orange">Taslağa Kaydet</button>
+    </form>
+</fieldset>

@@ -1,0 +1,21 @@
+    <header class="header">
+        <div>
+            <button class="menu nav-button color-white">
+                <i class="fa fa-bars fa-2x"></i>
+            </button>
+            <a href="/" class="ml-5 logo"><h2>Yazılarım</h2></a>
+        </div>
+        <div>
+            {{#if user}}
+                <a href="/settings">
+                    <i class="fa fa-cogs fa-2x ml-5"></i>
+                </a>
+                <a href="/create">
+                  <i class="fa fa-plus fa-2x ml-5"></i>
+                </a>
+                <a href="auth/logout">
+                  <i class="fa fa-arrow-right fa-2x ml-5"></i>
+                </a>
+            {{/if}}
+        </div>
+    </header> 

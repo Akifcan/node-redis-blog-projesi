@@ -1,0 +1,29 @@
+{{#section 'styles'}}
+    <link rel="stylesheet" href="/styles/settings.css">
+{{/section}}
+
+{{> _settings}}
+
+<h1 class="mt-5">{{pageTitle}}</h1>
+
+{{> _alert}}
+
+<form class="page-settings mt-3em" method="POST" action="/settings/update-page-settings">
+    <div class="form-group mb-5">
+        <label for="title">Sayfa Başlığı</label>
+        <input type="text" name="title" id="title" value="{{pageSettings.title}}" class="width-100 mt-5">
+    </div>
+    <div class="form-group mb-5">
+        <label for="author">Sayfa Yazarı</label>
+        <input type="text" name="author" id="author" value="{{pageSettings.author}}" class="width-100 mt-5">
+    </div>
+    <div class="form-group">
+        <label for="description">Sayfa Açıklaması</label>
+        <textarea id="description" name="description" class="width-100 mt-5" cols="30" rows="10">{{pageSettings.description}}</textarea>
+    </div>
+    <div class="form-group">
+        <label for="email">E-Posta Adresiniz</label>
+        <input type="email" id="email" name="email" value="{{pageSettings.email}}" class="width-100 mt-5">
+    </div>
+    <button class="background-blue width-100">Değişiklikleri Kaydet</button>
+</form>

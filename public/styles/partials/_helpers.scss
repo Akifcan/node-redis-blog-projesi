@@ -1,0 +1,77 @@
+.ml-5{
+    margin-left: .5em;
+}
+
+.mt-5{
+    margin-top: .5em;
+}
+
+.mb-5{
+    margin-bottom: .5em;
+}
+
+.mt-3em{
+    margin-top: 3em;
+}
+
+.width-100{
+    width: 100%;
+}
+
+.container{
+    width: 80%;
+    margin: 2em auto;
+}
+
+.color-white{
+    color: white;
+}
+
+.background-blue{
+    background-color: $color-blue;
+    color: white;
+}
+
+.background-grey{
+    background-color: $color-grey;
+    color: white;
+}
+
+.background-orange{
+    background-color: $color-orange;
+    color: white;
+}
+
+.background-green{
+    background-color: $color-green;
+    color: white;
+}
+
+.background-red{
+    background-color: $color-red;
+    color: white;
+}
+
+.color-red{
+    color: $color-red;
+}
+
+.color-orange{
+    color: $color-orange;
+}
+
+.color-blue{
+    color: $color-blue;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.cursor-pointer{
+    cursor: pointer;
+}

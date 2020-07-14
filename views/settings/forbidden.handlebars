@@ -1,0 +1,20 @@
+{{#section 'styles'}}
+    <link rel="stylesheet" href="/styles/settings.css">
+{{/section}}
+
+{{> _settings}}
+
+<h1 class="mt-5">{{pageTitle}}</h1>
+
+{{> _alert}}
+
+<div class="shareds mt-5">
+    {{#each ips}}
+        <div class="shared mt-5">
+            {{_id}} 
+            <a href="/settings/remove-from-forbidden-list/{{_id}}">
+                <button class="background-red">Kaldır</button>
+            </a>
+        </div>
+    {{/each}}
+</div>

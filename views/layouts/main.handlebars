@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ pageSettings.description }}">
+    <meta name="author" content="{{pageSettings.author}}">
+    <title>{{ pageSettings.title }}</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    {{{_sections.styles}}}
+</head>
+<body>
+    {{> _header}}
+    {{> _aside }}
+    <div class="container">
+        {{{body}}}
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+    <script src="/scripts/main.js"></script>
+    {{{_sections.scripts}}}
+</body>
+</html>

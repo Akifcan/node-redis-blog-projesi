@@ -1,0 +1,20 @@
+{{#section 'styles'}}
+    <link rel="stylesheet" href="/styles/settings.css">
+{{/section}}
+
+{{> _alert}}
+
+<h1 class="mt-5">{{pageTitle}}</h1>
+
+<div class="shareds mt-5">
+    {{#each messages}}
+        <div class="shared mt-5">
+            <b>{{topic}}</b> <a href="/settings/read-message/{{_id}}"><button class="background-blue">Yanıtla</button></a> 
+            {{#if isReplied}}
+                <button class="background-green">Okundu</button>
+            {{else}}
+                <button class="background-red">Okunmadı</button>
+            {{/if}}
+        </div>
+    {{/each}}
+</div>

@@ -1,0 +1,21 @@
+{{#section 'styles'}}
+    <link rel="stylesheet" href="/styles/message.css">
+{{/section}}
+{{#section 'scripts'}}
+    <script src="/scripts/read-message.js"></script>
+{{/section}}
+{{> _alert}}
+<div class="message-area">
+    <div class="message">
+        <h1>{{ message.topic }}</h1>
+        <p class="message-text">{{message.message}}</p>
+        <p>Gönderen: <b>{{message.name}}</b> - Ip: 
+        <b class="cursor-pointer show-ip" title="İp Bilgilerini Göster" data-ip="{{message.ip}}" >{{message.ip}}</b>  </p>
+        <p>E-Posta Adresi: {{message.email}}</p>
+    </div>
+</div>
+<hr class="mt-3em">
+<form action="/settings/reply-message" method="POST" class="mt-3em">
+    <textarea class="width-100" name="text" cols="30" rows="10"></textarea>
+    <button class="background-blue width-100">Yanıtla</button>
+</form>

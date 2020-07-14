@@ -1,0 +1,36 @@
+.about-me {
+  text-align: center;
+}
+
+.about-me-text {
+  margin-top: 3em;
+  line-height: 1.9;
+}
+
+.about-me-text.deactive {
+  display: none;
+}
+
+.actions {
+  margin-top: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.edit-about-me {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: none;
+}
+
+.edit-about-me.active {
+  display: block;
+}
+/*# sourceMappingURL=about.css.map */

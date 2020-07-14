@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap");
+.login {
+  text-align: center;
+  border: 2px solid #0c2461;
+  padding: 1em;
+}
+
+.login-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h3 {
+  margin-bottom: 2em;
+}
+
+.form-group {
+  text-align: left;
+}
+
+@media (min-width: 800px) {
+  .login {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=login.css.map */

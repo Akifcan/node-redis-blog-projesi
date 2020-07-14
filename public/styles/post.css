@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap");
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.post-title, .subtitle, .comment-title {
+  margin-bottom: .5em;
+}
+
+.body {
+  width: 100%;
+  line-height: 1.8;
+  width: inherit;
+  word-wrap: break-word;
+}
+
+button {
+  margin-bottom: .3em;
+}
+
+.divider {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.comment {
+  padding: 1em;
+  border-bottom: 3px solid #0c2461;
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.user-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: .5em;
+}
+
+.username {
+  font-size: 1.2em;
+  margin-left: .5em;
+}
+
+.user-avatar {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: #0c2461;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.do-comment {
+  display: none;
+}
+
+.do-comment.active {
+  display: block;
+}
+
+.comment-title {
+  display: inline;
+}
+
+@media (min-width: 800px) {
+  img {
+    height: 350px;
+  }
+}
+/*# sourceMappingURL=post.css.map */
